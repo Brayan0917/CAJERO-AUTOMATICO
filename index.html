@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cajero Automático</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nueva+Std&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <h1>Cajero Automático</h1>
+  
+  <div id="alertasContainer"></div>
+
+  <div id="login">
+    <h2>Selecciona tu cuenta y digita tu contraseña</h2>
+    <div class="select-box">
+      <select id="cuentasDropdown">
+        <option value="0">Persona 1</option>
+        <option value="1">Persona 2</option>
+        <option value="2">Persona 3</option>
+      </select>
+    </div>
+    <input type="password" id="passwordInput" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+    <p id="loginMessage"></p>
+  </div>
+  
+  <div id="operations" >
+    <h2 id="accountName"></h2>
+    <div id="balanceContainer" style="display: none;">
+      <p id="balance"></p>
+    </div>
+  
+    <h3>Elige una opción:</h3>
+    <button onclick="checkBalance()">Consultar saldo</button>
+    <button onclick="deposit()">Ingresar monto</button>
+    <button onclick="withdraw()">Retirar monto</button>
+  
+    <div id="transactionForm" style="display: none;">
+      <input type="number" id="transactionAmount" placeholder="Monto">
+      <button onclick="processTransaction()" class="deposit">Confirmar</button>
+    </div>
+  
+    <button onclick="logout()">Cerrar sesión</button>
+  </div>              
+  
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+

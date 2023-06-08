@@ -1,0 +1,172 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #333333;
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+#login,
+#operations {
+  margin: 100px auto;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid #333333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#operations {
+  display: none;
+}
+
+#accountName {
+  margin-top: 0;
+  color: #333333;
+  font-size: 24px;
+}
+
+#balance {
+  margin-top: 10px;
+  font-size: 25px;
+  color: #fcfcfc;
+  background-color: #004ad3;
+  border-radius: 7px;
+ 
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+#transactionForm {
+  display: none;
+  margin-top: 20px;
+}
+
+#transactionForm input {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #333333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#transactionForm button {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+#transactionForm button:hover {
+  background-color: #b52a37;
+}
+
+button.logout {
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #dc3545;
+  border: 2px solid #dc3545;
+}
+
+button.logout:hover {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.select-box {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #333333;
+}
+
+.select-box select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #333333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.select-box select:hover {
+  background-color: #e5e5e5;
+}
+
+.select-box select:focus {
+  outline: none;
+}
+
+.select-box::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888888;
+  pointer-events: none;
+}
+
+.select-box:hover::after {
+  color: #555555;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.success {
+  background-color: #007bff;
+}
+
+.error {
+  background-color: #dc3545;
+}
+
+.hidden {
+  display: none;
+}
